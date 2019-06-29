@@ -15,7 +15,6 @@ def main():
     if not os.path.isfile(args.video1) or not os.path.isfile(args.video2):
         print("Video files does not exists")
         return
-    
     clip1 = VideoFileClip(args.video1)
     clip2 = VideoFileClip(args.video2)
     final_clip = clips_array([[clip1, clip2]])
